@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light mode colors */
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-primary: #3B82F6;
+  --color-secondary: #10B981;
+  --color-accent: #8B5CF6;
+  --color-card-bg: #f3f4f6;
+  --color-card-border: #e5e7eb;
+  --color-nav-bg: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] {
+  --color-bg: #111827;
+  --color-text: #f3f4f6;
+  --color-primary: #60A5FA;
+  --color-secondary: #34D399;
+  --color-accent: #A78BFA;
+  --color-card-bg: #1F2937;
+  --color-card-border: #374151;
+  --color-nav-bg: rgba(17, 24, 39, 0.8);
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Animation delays */
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.animation-delay-1500 {
+  animation-delay: 1500ms;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2000ms;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4000ms;
+}
+
+/* Custom utilities */
+.text-shadow-lg {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient animation background size */
+.animate-gradient {
+  background-size: 400% 400%;
+}
+
+* {
+  font-family: 'prompt', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Common styles */
+.card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.nav-container {
+  background-color: var(--color-nav-bg);
+  backdrop-filter: blur(8px);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
