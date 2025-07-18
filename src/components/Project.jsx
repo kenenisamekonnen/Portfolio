@@ -28,10 +28,10 @@ const Project = () => {
                 built an E-commerce fullstack using Java(sprng boot)for backend and javascript(react) fro frontend
               </p>
               <div className="flex space-x-3">
-                <a href="#" className="btn-primary py-2 px-4 rounded-lg transform hover:scale-105 transition-transform">
+                {/* <a href="#" className="btn-primary py-2 px-4 rounded-lg transform hover:scale-105 transition-transform">
                   Live Demo
-                </a>
-                <a href="#" className="border border-[var(--color-card-border)] py-2 px-4 rounded-lg hover:border-[var(--color-primary)] transition-colors">
+                </a> */}
+                <a href="https://github.com/kenenisamekonnen/fullstack-project" className="border border-[var(--color-card-border)] py-2 px-4 rounded-lg hover:border-[var(--color-primary)] transition-colors">
                   GitHub
                 </a>
               </div>
@@ -54,10 +54,10 @@ const Project = () => {
                 Movie Website in which you can see imdb of any movie outthere used Javascript or React
               </p>
               <div className="flex space-x-3">
-                <a href="#" className="btn-secondary py-2 px-4 rounded-lg transform hover:scale-105 transition-transform">
+                {/* <a href="#" className="btn-secondary py-2 px-4 rounded-lg transform hover:scale-105 transition-transform">
                   Live Demo
-                </a>
-                <a href="#" className="border border-[var(--color-card-border)] py-2 px-4 rounded-lg hover:border-[var(--color-secondary)] transition-colors">
+                </a> */}
+                <a href="https://github.com/kenenisamekonnen/filmpire-movie" className="border border-[var(--color-card-border)] py-2 px-4 rounded-lg hover:border-[var(--color-secondary)] transition-colors">
                   GitHub
                 </a>
               </div>
@@ -80,9 +80,9 @@ const Project = () => {
                 A FullStack All in one Web App built using Node.js/expres.js for backend and mySQL or Sequalize for Database and used react and tailwind css for frontend
               </p>
               <div className="flex space-x-3">
-                <a href="#" className="bg-[var(--color-accent)] text-white py-2 px-4 rounded-lg transform hover:scale-105 transition-transform">
+                {/* <a href="#" className="bg-[var(--color-accent)] text-white py-2 px-4 rounded-lg transform hover:scale-105 transition-transform">
                   Live Demo
-                </a>
+                </a> */}
                 <a href="#" className="border border-[var(--color-card-border)] py-2 px-4 rounded-lg hover:border-[var(--color-accent)] transition-colors">
                   GitHub
                 </a>

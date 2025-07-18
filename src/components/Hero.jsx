@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
-
+import Project from './Project';
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -19,7 +21,7 @@ const Hero = () => {
         <div className="absolute -bottom-40 left-20 w-80 h-80 bg-[var(--color-accent)] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto px-4 text-center relative z-10 mt-10">
         <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h1 className='text-[var(--color-accent)] font-bold text-3xl mb-4 animate-fadeIn'>
             Welcome To my Portfolio
@@ -31,8 +33,11 @@ const Hero = () => {
             A passionate and creative Full stack developer based in Adama, Oromia, Ethiopia.
             I am eager to build impactful and user-friendly web applications.
           </p>
-          <button className="btn-primary text-lg px-8 py-3 rounded-full animate-fadeIn animation-delay-1500 transform hover:scale-105 transition-transform">
-            View My Projects
+          <button className="btn-primary text-lg px-8 py-3 
+              rounded-full animate-fadeIn animation-delay-1500 
+              hover:scale-105 transition-all duration-300"
+              >
+            <li className='list-none hover:scale-105 transition-all duration-300'><a href="#projects" className="">View My Projects</a></li>
           </button>
         </div>
       </div>
